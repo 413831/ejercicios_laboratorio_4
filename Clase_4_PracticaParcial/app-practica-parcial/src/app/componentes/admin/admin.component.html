@@ -1,0 +1,16 @@
+<section class="widget clearfix" >
+  <h4 class="widgettitle">Alta de Producto</h4>
+  <div>
+    <app-producto (altaProducto)="alta($event)"></app-producto>
+  </div>
+</section>
+<section class="widget clearfix" >
+  <div>
+    <app-lista [listadoProductos]='productos' (seleccionar)='seleccionarProducto($event)'></app-lista>
+  </div>
+</section>
+<section class="widget clearfix" >
+  <div>
+    <app-boton [producto]='producto' (bajaProducto)='baja($event)'></app-boton>
+  </div>
+</section>
