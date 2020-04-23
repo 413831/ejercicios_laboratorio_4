@@ -7,14 +7,15 @@ import { Producto } from '../../clases/producto'
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent implements OnInit {
-  productos:Producto[];
+  productos:Producto[] = [];
   producto: Producto;
 
   constructor() { 
-    localStorage.setItem("productos",JSON.stringify(this.productos));
+    
   }
 
   ngOnInit(): void {
+    localStorage.setItem("productos",JSON.stringify(this.productos));
   }
   
   alta(producto:Producto)
