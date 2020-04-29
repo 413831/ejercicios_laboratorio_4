@@ -7,6 +7,8 @@ import { ListadopeliculasComponent } from './componentes/listadopeliculas/listad
 import { DetallepeliculasComponent } from './componentes/detallepeliculas/detallepeliculas.component';
 import { AdminpeliculasComponent } from './componentes/adminpeliculas/adminpeliculas.component';
 import { FavoritopeliculasComponent } from './componentes/favoritopeliculas/favoritopeliculas.component';
+import { HttpClientModule } from  '@angular/common/http';
+import { PeliculasRESTService } from './servicios/peliculas-rest.service';
 
 @NgModule({
   declarations: [
@@ -18,9 +20,10 @@ import { FavoritopeliculasComponent } from './componentes/favoritopeliculas/favo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [PeliculasRESTService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
