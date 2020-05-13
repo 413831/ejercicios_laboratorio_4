@@ -1,2 +1,2 @@
 # ejercicios_laboratorio_4
-Ejercicios de clases de Laboratorio de Computacion IV con Angular
+Ejercicios de clases de Laboratorio de Computacion IV utilizando Angular
